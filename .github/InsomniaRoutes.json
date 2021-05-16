@@ -1,0 +1,208 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-05-16T12:46:36.639Z",
+  "__export_source": "insomnia.desktop.app:v2021.3.0",
+  "resources": [
+    {
+      "_id": "req_39ca129f5e61445d86a60c1a40d66eeb",
+      "parentId": "fld_c618665246b74a75b34cf72ff9ce4d84",
+      "modified": 1621167536652,
+      "created": 1621167313025,
+      "url": "{{ _.BASE_URL }}/user",
+      "name": "FindAll",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621039675662,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_c618665246b74a75b34cf72ff9ce4d84",
+      "parentId": "wrk_1f8b2073809f41169b2dffc65b94e8b7",
+      "modified": 1621039671799,
+      "created": 1621039671799,
+      "name": "User",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1621039671799,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_1f8b2073809f41169b2dffc65b94e8b7",
+      "parentId": null,
+      "modified": 1621039668962,
+      "created": 1621039668962,
+      "name": "Levy_backend",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_b2f1b18b92a64659bd36c79c8ba866f9",
+      "parentId": "fld_c618665246b74a75b34cf72ff9ce4d84",
+      "modified": 1621167807224,
+      "created": 1621083675051,
+      "url": "{{ _.BASE_URL }}/user/60a10ebafd52bd1d4b7f0658",
+      "name": "FindOne",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621039675612,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_57081edbc91843999158cc45ad6b4224",
+      "parentId": "fld_c618665246b74a75b34cf72ff9ce4d84",
+      "modified": 1621167800750,
+      "created": 1621039675562,
+      "url": "{{ _.BASE_URL }}/user",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\": \"bleszerd\",\n\t\"password\": \"senhasegura\",\n\t\"email\": \"email@example.com\",\n\t\"profile\": {\n\t\t\"name\": \"Vinícius Resende\",\n\t\t\"gender\": \"male\"\n\t}\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_b1739e42bf3e46388925eb81264835cb"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621039675562,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a0977fa93c77445c99a83b8c343c2d0a",
+      "parentId": "fld_c618665246b74a75b34cf72ff9ce4d84",
+      "modified": 1621168823665,
+      "created": 1621102419074,
+      "url": "{{ _.BASE_URL }}/user/60a10ebafd52bd1d4b7f0658",
+      "name": "UpdateOne",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\": \"bleszerd\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_307702853bc549278e2f63ef277a399f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621039675462,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d923291133d94c049fc5817752bc6e24",
+      "parentId": "fld_c618665246b74a75b34cf72ff9ce4d84",
+      "modified": 1621168909177,
+      "created": 1621104260869,
+      "url": "{{ _.BASE_URL }}/user/60a10ebafd52bd1d4b7f0658",
+      "name": "DeleteOne",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621039675412,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_7a8defb20723e401e7989249863ddff41678c096",
+      "parentId": "wrk_1f8b2073809f41169b2dffc65b94e8b7",
+      "modified": 1621167391909,
+      "created": 1621039669070,
+      "name": "Base Environment",
+      "data": { "BASE_URL": "http://localhost:3000/api/v1" },
+      "dataPropertyOrder": { "&": ["BASE_URL"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1621039669070,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_7a8defb20723e401e7989249863ddff41678c096",
+      "parentId": "wrk_1f8b2073809f41169b2dffc65b94e8b7",
+      "modified": 1621168903912,
+      "created": 1621039669085,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "connect.sid",
+          "value": "s%3A1zogOTc1cns_TaXj7QoekwCfWjN_JZeD.7CyXYponFUpLdk4RmI2wBMRz1Xbb8uLRfF3myZe3Qmc",
+          "expires": "2021-05-23T12:41:43.000Z",
+          "domain": "localhost",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2021-05-15T19:14:16.721Z",
+          "lastAccessed": "2021-05-16T12:41:43.912Z",
+          "id": "5600070692391277"
+        }
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_70f8c89de9cf44f0b3aa83b1de9800f2",
+      "parentId": "wrk_1f8b2073809f41169b2dffc65b94e8b7",
+      "modified": 1621039668970,
+      "created": 1621039668970,
+      "fileName": "Levy_backend",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
